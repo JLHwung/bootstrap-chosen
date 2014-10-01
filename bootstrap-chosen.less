@@ -366,15 +366,10 @@
 }
 
 .chosen-disabled {
-  cursor: default;
-  opacity: 0.5 !important;
-
-  .chosen-single {
-    cursor: default;
-  }
-
-  .chosen-choices .search-choice .search-choice-close {
-    cursor: default;
+  cursor: not-allowed;
+  .chosen-single, .chosen-choices, .chosen-choices .search-choice, .chosen-choices .search-choice .search-choice-close {
+    cursor: not-allowed;
+    background-color: @gray-lighter;
   }
 }
 
